@@ -20,7 +20,8 @@ const Login = (props) => {
   }
 
   function loginHandler() {
-    props.setToken("bsakjfabskfbasljfiewlbfjlewfkweiylfhkwehfbbsdf");
+    localStorage.setItem('token',"bsakjfabskfbasljfiewlbfjlewfkweiylfhkwehfbbsdf");
+    props.setIsAuth(true)
   }
 
   return (
