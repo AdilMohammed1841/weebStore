@@ -1,0 +1,25 @@
+.anime-list-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.anime-list-item{
+    margin-left: 19px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 92%;   
+}
+
+.anime-list-container :hover{
+    box-shadow: 3px 0px 8px 0px #888888; 
+}
+
+.anime-list-item :hover{
+    box-shadow:none !important;
+}
+.anime-list-item img{
+    width: 50%;
+    margin-left: 91px;
+    height: 82%;
+    margin-top: 12px;
+}

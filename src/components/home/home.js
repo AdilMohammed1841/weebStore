@@ -1,18 +1,12 @@
 import React from "react";
+import Listing from "../listing/listing";
 import "./home.css";
 
 const Home = ({ animeList }) => {
   
   return (
-    <div className="anime-list-container">
-      {animeList &&
-        animeList?.data?.length &&
-        animeList.data.map((item, index) => {
-            return(
-                <div key={index} className="anime-list-item" >
-                    <img alt='' src={item?.attributes?.posterImage?.large}/>
-                </div>)
-        })}
+    <div>
+        <Listing animeList={animeList}/>
     </div>
   );
 };
