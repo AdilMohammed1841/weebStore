@@ -29,6 +29,7 @@
 .footer-container{
     border-top: 1px solid grey;
     height: 20vh;
+    box-shadow: 3px 0px 8px 0px #888888;
 }
 
 .footer-container p{
