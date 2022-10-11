@@ -8,9 +8,9 @@ const Header = () => {
       <ul>
         {headerData &&
           headerData.map((item, index) => (
-            <a href={item.path}>
-              <li> {item.name} </li>
-            </a>
+           
+              <li> <a key={index} href={item.path}> {item.name} </a></li>
+            
           ))}
       </ul>
     </div>

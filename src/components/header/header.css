@@ -1,0 +1,7 @@
+.header-cont ul{
+    display: flex;
+}
+
+.header-cont li{
+    margin-left: 10px;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import './listing.css'
 
 const Listing = ({ animeList }) => {
+
   return (
     <div className="anime-list-container" >
       {animeList &&
