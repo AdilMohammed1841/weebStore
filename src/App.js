@@ -7,6 +7,7 @@ import axios from "axios";
 import Layout from "./components/layout/layout";
 import "./App.css";
 import Trending from "./components/trending/trending";
+import ContentDetails from "./components/details/contentDetails";
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -37,6 +38,7 @@ function App() {
           <Routes>
             <Route path="/" element={isAuth ? (animeList && <Home animeList={animeList} />) : (<Login setIsAuth={setIsAuth} />)}/>
             <Route path="/trending" element={isAuth ? (<Trending />) : (<Login setIsAuth={setIsAuth} />)}/>
+            <Route path="/:slug" element={isAuth ? (<ContentDetails />) : (<Login setIsAuth={setIsAuth} />)}/>            
           </Routes>
         </BrowserRouter>
       </Layout>

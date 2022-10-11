@@ -8,9 +8,15 @@ const Listing = ({ animeList }) => {
       {animeList &&
         animeList?.data?.length &&
         animeList.data.map((item, index) => {
+            console.log('====================================');
+            console.log(item?.attributes);
+            console.log('====================================');
           return (
             <div key={index} className="anime-list-item">
-              <img alt="" src={item?.attributes?.posterImage?.large} />
+                <a href={item?.attributes?.slug} >
+                    <img alt="" src={item?.attributes?.posterImage?.large} />
+                    <p>{item?.attributes?.titles?.ja_jp}</p>
+                </a>                   
             </div>
           );
         })}

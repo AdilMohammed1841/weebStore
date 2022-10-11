@@ -16,10 +16,20 @@
 
 .anime-list-item :hover{
     box-shadow:none !important;
+    color: red;
 }
 .anime-list-item img{
     width: 50%;
-    margin-left: 91px;
+    margin-left: 25%;
     height: 82%;
     margin-top: 12px;
+}
+
+.anime-list-item p{
+    margin-left: 25%;
+}
+
+.anime-list-item a{
+    text-decoration: none;
+    color:black;
 }
